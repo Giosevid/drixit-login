@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component <SignInForm/>  render without crashing 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="logo"
+      class="App-logo"
+      src="dritix.jpg"
+    />
+    <div
+      class="login-text"
+    >
+      <h1>
+        DRIXIT
+      </h1>
+      <p>
+        TECHNOLOGIES
+      </p>
+    </div>
+    <div
+      class="container-sign-in card text-left form-group"
+    >
+      <form
+        action="#"
+        class="form-group p-5"
+      >
+        <div
+          class="form-group"
+        >
+          <label>
+            Email
+          </label>
+          <input
+            class="form-control"
+            name="email"
+            placeholder="Ingresar email"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label>
+            Contraseña
+          </label>
+          <input
+            class="form-control"
+            name="password"
+            placeholder="Ingresar Contraseña"
+            type="password"
+            value=""
+          />
+        </div>
+        <div
+          class="text-center"
+        >
+          <button
+            class="btn btn-primary"
+            type="submit"
+          >
+            Ingresar
+          </button>
+          <div>
+            <a
+              href="/"
+            >
+              Olvidé mi contraseña
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
