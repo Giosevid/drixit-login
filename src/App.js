@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Styles.css';
+import SignInForm from './components/Form/SignInForm';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Welcome from "./pages/welcome"
+import { ProtectedRoute } from "./routes/protected.route";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container-fluid App">
+        <Switch>
+          <Route path="/" exact component={SignInForm} />
+          <ProtectedRoute exact path="/welcome" component={Welcome} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
